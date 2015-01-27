@@ -1,0 +1,144 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:columnCount="3"
+    android:columnOrderPreserved="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff8f5ee"
+    android:rowCount="6">
+
+
+    <TextView
+        android:text="Book Title: "
+        android:layout_column="0"
+        android:layout_gravity="left"
+        android:textColor="#ffee6465"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginBottom="10sp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtBookTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_columnSpan="2"
+        android:ems="10"
+        android:textColor="#ffee6465"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:layout_marginBottom="10sp" />
+
+    <TextView android:text="Author Name: "
+        android:layout_column="0"
+        android:layout_gravity="left"
+        android:textColor="#ffee6465"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginBottom="10sp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtAuthorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_columnSpan="2"
+        android:ems="10"
+        android:textColor="#ffee6465"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:layout_marginBottom="10sp" />
+
+    <TextView android:text="Publish Year: "
+        android:layout_column="0"
+        android:layout_gravity="left"
+        android:textColor="#ffee6465"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginBottom="10sp" />
+
+    <TextView
+        android:id="@+id/txtPYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_columnSpan="2"
+        android:ems="10"
+        android:textColor="#ffee6465"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:layout_marginBottom="10sp" />
+
+    <TextView
+        android:text="Pages: "
+        android:layout_column="0"
+        android:layout_gravity="left"
+        android:textColor="#ffee6465"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginBottom="10sp" />
+
+    <TextView
+        android:id="@+id/txtPages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_columnSpan="2"
+        android:ems="10"
+        android:textColor="#ffee6465"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:layout_marginBottom="10sp" />
+
+    <TextView
+        android:text="Finishing Date: "
+        android:layout_column="0"
+        android:layout_gravity="left"
+        android:textColor="#ffee6465"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginBottom="10sp" />
+
+    <TextView
+        android:id="@+id/txtFinishing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_columnSpan="2"
+        android:ems="10"
+        android:textColor="#ffee6465"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:layout_marginBottom="10sp" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar2"
+        android:layout_row="5"
+        android:layout_gravity="left"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:numStars="5"
+        android:background="#fff8f5ee"
+        android:progressTint="#ffee6364"
+        android:indeterminateTint="#ffee6364"
+        android:indeterminateOnly="false"
+        android:stepSize="1" />
+
+    <Space
+        android:layout_column="0"
+        android:layout_gravity="fill"
+        android:layout_columnSpan="3"/>
+
+    <Button android:id="@+id/btnSave"
+        android:layout_column="2"
+        android:text="Save to File"
+        android:layout_width="386dp"
+        android:textColor="#fff8f5ee"
+        android:background="#ffee6465" />
+
+</GridLayout>
+

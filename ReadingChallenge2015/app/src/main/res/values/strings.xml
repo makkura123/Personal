@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">2015 Reading Challenge</string>
+    <string name="addbook">Add Book</string>
+    <string name="action_settings">Settings</string>
+    <string name="five_pages">A book with more than 500 pages</string>
+    <string name="classic_rom">A classic romance</string>
+    <string name="movie_adap">A book made into a movie</string>
+    <string name="published_year">A book published this year</string>
+    <string name="book_number">A book with a number in the title</string>
+    <string name="under_thirty">A book written by someone under 30</string>
+    <string name="non_human">A book with nonhuman characters</string>
+    <string name="funny">A funny book</string>
+    <string name="female_auth">A book by a female author</string>
+    <string name="myst_thril">A mystery or thriller</string>
+    <string name="one_word">A book with a one-word title</string>
+    <string name="short_stories">A book of short stories</string>
+    <string name="diff_world">A book set in a different country</string>
+    <string name="nonfiction">A nonfiction book</string>
+    <string name="pop_first">A popular author\'s first book</string>
+    <string name="author_love">A book from an author you love</string>
+    <string name="recom_friend">A book a friend recommended</string>
+    <string name="puli_win">A Pulitzer Prize-winning book</string>
+    <string name="true_story">A book based on a true story</string>
+    <string name="bottom_list">A book at the bottom of your to-read list</string>
+    <string name="mum_loves">A book your mum loves</string>
+    <string name="scary">A book that scares you</string>
+    <string name="old_book">A book more than 100 years old</string>
+    <string name="cover_book">A book based entirely on its cover</string>
+    <string name="school_book">A book you were supposed to read in school</string>
+    <string name="memoir">A memoir</string>
+    <string name="finish_day">A book you can finish in a day</string>
+    <string name="anto_title">A book with antonyms in the title</string>
+    <string name="wish_visit">A book set where you\'d want to visit</string>
+    <string name="year_born">A book that came out the year you were born</string>
+    <string name="bad_review">A book with bad reviews</string>
+    <string name="trilogy">A trilogy</string>
+    <string name="childhood">A book from your childhood</string>
+    <string name="love_triangle">A book with a love triangle</string>
+    <string name="future_book">A book set in the future</string>
+    <string name="high_school">A book set in high school</string>
+    <string name="color_book">A book with a color in the title</string>
+    <string name="cry_book">A book that made you cry</string>
+    <string name="magic_book">A book with magic</string>
+    <string name="graphic_novel">A graphic novel</string>
+    <string name="never_read">A book by an author you\'ve never read before</string>
+    <string name="hometown">A book that takes place in your hometown</string>
+    <string name="diff_lang">A book first written in a different language</string>
+    <string name="christmas">A book set during Christmas</string>
+    <string name="init_book">A book by an author with your initials</string>
+    <string name="play">A play</string>
+    <string name="banned_book">A banned book</string>
+    <string name="tv_book">A book based on or turned into a TV show</string>
+    <string name="never_finish">A book you started but never finished</string>
+    <string name="title_activity_book_adding">BookAdding</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_show_book">ShowBook</string>
+
+</resources>

@@ -1,0 +1,1626 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/picture">
+    >
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="220dp"
+        android:layout_gravity="center_vertical|fill">
+
+
+        <TableLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_height="fill_parent"
+                android:layout_width="390dp"
+                android:id="@+id/addbook"
+                android:text="@string/addbook"
+                android:textColor="#fff8f5ee"
+                android:background="#ffee6364"
+                android:onClick="btnClick" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/five_pages"
+                    android:id="@+id/text500"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:focusableInTouchMode="false"
+                    android:visibility="visible"
+                    android:typeface="serif"
+                    android:layout_gravity="center_vertical"
+                    android:layout_column="0" />
+
+                <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/check"
+                android:visibility="invisible"
+                android:layout_column="1"
+                    android:adjustViewBounds="true"
+                    android:onClick="btnView"
+                    android:clickable="true" />
+
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/five_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/classic_rom"
+                    android:id="@+id/text_rom"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView2"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible"
+                    android:clickable="true"
+                    android:onClick="btnView"
+                    android:nestedScrollingEnabled="false" />
+            </TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rom_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/movie_adap"
+                    android:id="@+id/text_mov"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView3"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/movie_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/published_year"
+                    android:id="@+id/text_year"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView4"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/year_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/book_number"
+                    android:id="@+id/text_number"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView5"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/number_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/under_thirty"
+                    android:id="@+id/text_thirty"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView6"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/thirty_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/non_human"
+                    android:id="@+id/text_nonhuman"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView7"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nonhuman_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/funny"
+                    android:id="@+id/text_funny"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView8"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/funny_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female_auth"
+                    android:id="@+id/text_female"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView9"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/female_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/myst_thril"
+                    android:id="@+id/myst_thrill"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView10"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mystthril_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/one_word"
+                    android:id="@+id/one_word"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView11"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/one_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/short_stories"
+                    android:id="@+id/short_stories"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView12"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/short_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/diff_world"
+                    android:id="@+id/diff_world"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView13"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/diff_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nonfiction"
+                    android:id="@+id/nonfiction"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView14"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nonfiction_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pop_first"
+                    android:id="@+id/pop_first"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView15"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pop_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/author_love"
+                    android:id="@+id/author_love"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView16"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/love_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recom_friend"
+                    android:id="@+id/recom_friend"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView17"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/recom_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/puli_win"
+                    android:id="@+id/puli_win"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView18"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/puli_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/true_story"
+                    android:id="@+id/true_story"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView19"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/true_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bottom_list"
+                    android:id="@+id/bottom_list"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView20"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bottom_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mum_loves"
+                    android:id="@+id/mum_loves"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView21"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mum_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scary"
+                    android:id="@+id/scary"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView22"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/scary_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/old_book"
+                    android:id="@+id/old_book"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView23"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/old_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cover_book"
+                    android:id="@+id/cover_book"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView24"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cover_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/memoir"
+                    android:id="@+id/memoir"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView25"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/memoir_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/finish_day"
+                    android:id="@+id/finish_day"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView26"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/day_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/anto_title"
+                    android:id="@+id/anto_title"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView27"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/anto_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wish_visit"
+                    android:id="@+id/wish_visit"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView28"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/wish_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/year_born"
+                    android:id="@+id/year_born"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView30"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/born_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bad_review"
+                    android:id="@+id/bad_review"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView31"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bad_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/trilogy"
+                    android:id="@+id/trilogy"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView32"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/trilogy_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/childhood"
+                    android:id="@+id/childhood"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView33"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/child_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/love_triangle"
+                    android:id="@+id/love_triangle"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView34"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/triangle_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/future_book"
+                    android:id="@+id/future_book"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView35"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/future_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/high_school"
+                    android:id="@+id/high_school"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView36"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/school_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/color_book"
+                    android:id="@+id/color_book"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView37"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/color_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cry_book"
+                    android:id="@+id/cry_book"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView38"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cry_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/magic_book"
+                    android:id="@+id/magic_book"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView39"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/magic_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/graphic_novel"
+                    android:id="@+id/graphic_novel"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView40"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/graphic_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/never_read"
+                    android:id="@+id/never_read"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView41"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/never_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hometown"
+                    android:id="@+id/hometown"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView42"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/diff_lang"
+                    android:id="@+id/diff_lang"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView43"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lang_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/christmas"
+                    android:id="@+id/christmas"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView44"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/christmas_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/init_book"
+                    android:id="@+id/init_book"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView45"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/init_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/play"
+                    android:id="@+id/play"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView46"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/play_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/banned_book"
+                    android:id="@+id/banned_book"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView47"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/banned_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_book"
+                    android:id="@+id/tv_book"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView48"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/never_finish"
+                    android:id="@+id/never_finished"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#ffee6263"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:typeface="serif"
+                    android:layout_column="0" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView49"
+                    android:src="@drawable/check"
+                    android:layout_column="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nefinished_complete"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffee6263"
+                android:textSize="14dp" />
+
+        </TableLayout>
+    </ScrollView>
+
+
+</LinearLayout>

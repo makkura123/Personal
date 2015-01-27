@@ -1,0 +1,439 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:columnCount="3"
+    android:columnOrderPreserved="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff8f5ee"
+    tools:context=".BookAdding">
+
+    <TextView android:text="Book Title: "
+        android:layout_column="0"
+        android:layout_gravity="left"
+        android:textSize="16dp"
+        android:textColor="#ffee6364"
+        android:layout_row="0" />
+
+    <EditText android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_columnSpan="2"
+        android:ems="10"
+        android:layout_row="0"
+        android:inputType="textCapWords" />
+
+    <TextView android:text="Book Author: "
+        android:layout_column="0"
+        android:layout_gravity="left"
+        android:textSize="16dp"
+        android:textColor="#ffee6364"
+        android:layout_row="1" />
+
+    <EditText android:id="@+id/txtAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_columnSpan="2"
+        android:ems="10"
+        android:layout_row="1"
+        android:inputType="textPersonName" />
+
+    <TextView android:text="Publish Year: "
+        android:layout_column="0"
+        android:layout_gravity="left"
+        android:textSize="16dp"
+        android:textColor="#ffee6364"
+        android:layout_row="2" />
+
+    <EditText android:id="@+id/txtYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_columnSpan="2"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_row="2" />
+
+    <TextView android:text="Pages: "
+        android:layout_column="0"
+        android:layout_gravity="left"
+        android:textSize="16dp"
+        android:textColor="#ffee6364"
+        android:layout_row="3" />
+
+    <EditText android:id="@+id/txtPages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_columnSpan="2"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_row="3" />
+
+    <TextView android:text="Finishing Date: "
+        android:layout_column="0"
+        android:layout_gravity="left"
+        android:textSize="16dp"
+        android:textColor="#ffee6364"
+        android:layout_row="4" />
+
+    <EditText android:id="@+id/txtFinished"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_columnSpan="2"
+        android:ems="10"
+        android:inputType="date"
+        android:layout_row="4" />
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_row="5"
+        android:layout_gravity="left"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:numStars="5"
+        android:background="#fff8f5ee"
+        android:progressTint="#ffee6364"
+        android:indeterminateTint="#ffee6364"
+        android:indeterminateOnly="false"
+        android:stepSize="1" />
+
+
+
+    <ScrollView android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_row="6"
+        android:layout_height="250dp"
+        android:fillViewport="false"
+        android:layout_rowSpan="2"
+        android:layout_rowWeight="0">
+
+
+        <RadioGroup
+            android:layout_width="385dp"
+            android:layout_height="250dp">
+
+            <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/five_pages"
+            android:id="@+id/radioButton"
+                android:enabled="true"
+                android:textColor="#ffee6465" />
+
+            <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/classic_rom"
+            android:id="@+id/radioButton2"
+                android:textColor="#ffee6465" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/movie_adap"
+                android:id="@+id/radioButton3"
+                android:textColor="#ffee6465" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/published_year"
+                android:id="@+id/radioButton4"
+                android:textColor="#ffee6465" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/book_number"
+                android:id="@+id/radioButton5"
+                android:textColor="#ffee6465" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/under_thirty"
+                android:id="@+id/radioButton6"
+                android:textColor="#ffee6465" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/non_human"
+                android:id="@+id/radioButton7"
+                android:textColor="#ffee6465" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/funny"
+                android:id="@+id/radioButton8"
+                android:textColor="#ffee6465" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female_auth"
+                android:id="@+id/radioButton9"
+                android:textColor="#ffee6465" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/myst_thril"
+                android:id="@+id/radioButton10"
+                android:textColor="#ffee6465" />
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/one_word"
+            android:id="@+id/radioButton11"
+            android:textColor="#ffee6465" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/short_stories"
+                android:id="@+id/radioButton12"
+                android:textColor="#ffee6465" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/diff_world"
+                android:id="@+id/radioButton13"
+                android:textColor="#ffee6465" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nonfiction"
+                android:id="@+id/radioButton14"
+                android:textColor="#ffee6465" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pop_first"
+                android:id="@+id/radioButton15"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/author_love"
+                android:id="@+id/radioButton16"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recom_friend"
+                android:id="@+id/radioButton17"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/puli_win"
+                android:id="@+id/radioButton18"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/true_story"
+                android:id="@+id/radioButton19"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bottom_list"
+                android:id="@+id/radioButton20"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mum_loves"
+                android:id="@+id/radioButton21"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scary"
+                android:id="@+id/radioButton22"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/old_book"
+                android:id="@+id/radioButton23"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cover_book"
+                android:id="@+id/radioButton24"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/memoir"
+                android:id="@+id/radioButton25"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/finish_day"
+                android:id="@+id/radioButton26"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/anto_title"
+                android:id="@+id/radioButton27"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wish_visit"
+                android:id="@+id/radioButton28"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/year_born"
+                android:id="@+id/radioButton30"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bad_review"
+                android:id="@+id/radioButton31"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/trilogy"
+                android:id="@+id/radioButton32"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/childhood"
+                android:id="@+id/radioButton33"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/love_triangle"
+                android:id="@+id/radioButton34"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/future_book"
+                android:id="@+id/radioButton35"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/high_school"
+                android:id="@+id/radioButton36"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/color_book"
+                android:id="@+id/radioButton37"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cry_book"
+                android:id="@+id/radioButton38"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/magic_book"
+                android:id="@+id/radioButton39"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/graphic_novel"
+                android:id="@+id/radioButton40"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/never_read"
+                android:id="@+id/radioButton41"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hometown"
+                android:id="@+id/radioButton42"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/diff_lang"
+                android:id="@+id/radioButton43"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/christmas"
+                android:id="@+id/radioButton44"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/init_book"
+                android:id="@+id/radioButton45"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/play"
+                android:id="@+id/radioButton46"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/banned_book"
+                android:id="@+id/radioButton47"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_book"
+                android:id="@+id/radioButton48"
+                android:textColor="#ffee6465" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/never_finish"
+                android:id="@+id/radioButton49"
+                android:textColor="#ffee6465" />
+    </RadioGroup>
+
+    </ScrollView>
+
+    <Button android:id="@+id/btnAdd"
+        android:layout_column="2"
+        android:text="Add"
+        android:layout_width="fill_parent"
+        android:background="#ffee6364"
+        android:textColor="#fff8f5ee"
+        android:layout_row="8"
+        android:layout_height="wrap_content"
+        android:layout_rowSpan="1"
+        android:onClick="btnAdding"
+        android:nestedScrollingEnabled="true" />
+
+</GridLayout>
